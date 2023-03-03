@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="box">
+    <div class="display">
+      <small class="display__memory-indicator">m</small>
+      <input type="text" class="displayer" readonly size="18">
+    </div>
+    <div class="keys">
+      <p>
+        <input type="button" class="button gray" value="mrc" onclick="memory()" ondblclick="clearMemory()">
+        <input type="button" class="button gray" value="m-"onclick="memoryMinus()">
+        <input type="button" class="button gray" value="m+" onclick="memoryPlus()">
+        <input type="button" class="button pink" value="/" onclick="calculate(value)">
+      </p>
+      <p>
+        <input type="button" class="button black" value="7" onclick="displayNumber(value)">
+        <input type="button" class="button black" value="8" onclick="displayNumber(value)">
+        <input type="button" class="button black" value="9" onclick="displayNumber(value)">
+        <input type="button" class="button pink" value="*" onclick="calculate(value)">
+      </p>
+      <p>
+        <input type="button" class="button black" value="4" onclick="displayNumber(value)">
+        <input type="button" class="button black" value="5" onclick="displayNumber(value)">
+        <input type="button" class="button black" value="6" onclick="displayNumber(value)">
+        <input type="button" class="button pink" value="-" onclick="calculate(value)">
+      </p>
+      <p>
+        <input type="button" class="button black" value="1" onclick="displayNumber(value)">
+        <input type="button" class="button black" value="2" onclick="displayNumber(value)">
+        <input type="button" class="button black" value="3" onclick="displayNumber(value)">
+        <input type="button" class="button pink" value="+" onclick="calculate(value)">
+      </p>
+      <p>
+        <input type="button" class="button black" value="0" onclick="displayNumber(value)">
+        <input type="button" class="button black" value="." onclick="displayNumber(value)">
+        <input type="button" class="button black" value="C" onclick="clearing()">
+        <input type="button" class="button orange" value="=" onclick="result()">
+      </p>
+    </div>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
